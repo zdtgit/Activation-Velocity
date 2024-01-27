@@ -16,7 +16,7 @@ class ReplyCommand: SimpleCommand {
         if (source is Player) {
             val args = invocation.arguments()
 
-            if (args.size < 1) {
+            if (args.isEmpty()) {
                 source.sendMessage("&c사용법: /reply (메세지)".legacy)
                 return
             }
