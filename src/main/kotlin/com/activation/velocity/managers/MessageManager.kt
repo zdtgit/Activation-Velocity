@@ -1,7 +1,9 @@
 package com.activation.velocity.managers
 
 import com.activation.velocity.extensions.string.legacy
+import com.activation.velocity.extensions.string.mini
 import com.velocitypowered.api.proxy.Player
+import io.github.miniplaceholders.api.MiniPlaceholders
 import java.util.UUID
 
 object MessageManager {
