@@ -12,7 +12,6 @@ repositories {
 dependencies {
     kapt("com.velocitypowered:velocity-api:3.3.0-SNAPSHOT")
     compileOnly("com.velocitypowered:velocity-api:3.3.0-SNAPSHOT")
-    compileOnly("io.github.miniplaceholders:miniplaceholders-api:2.2.3")
 }
 
 kotlin {
