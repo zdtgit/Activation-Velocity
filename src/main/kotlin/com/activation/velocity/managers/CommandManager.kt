@@ -8,7 +8,7 @@ import com.activation.velocity.commands.ServerCommand
 import com.velocitypowered.api.command.Command
 
 object CommandManager {
-    val plugin = ActivationVelocity.instance
+    private val plugin = ActivationVelocity.instance
 
     fun init() {
         register("lobby", LobbyCommand(), "l", "로비")
