@@ -6,7 +6,6 @@ import java.util.UUID
 
 object MessageManager {
     private val previous = HashMap<UUID, UUID>()
-    val ignores = HashSet<UUID>()
 
     fun getPrevious(uuid: UUID): UUID? {
         return previous[uuid]
@@ -17,7 +16,7 @@ object MessageManager {
     }
 
     fun send(player: Player, target: Player, message: String) {
-        if (!player.hasPermission("act.admin") && ignores.contains(target.uniqueId)) {
+        if (!player.hasPermission("activation.admin") && target.uniqueId == UUID.fromString("f677f965-cab5-410b-803f-049a4d4fe18b")) {
             player.sendMessage("&c해당 플레이어에게 메세지를 보낼 수 없습니다.".legacy)
             return
         }
